@@ -40,7 +40,7 @@ function SearchFilterSection({
           </select>
         </div>
         {userRole.role === "admin" && (
-          <div className="flex-1 sm:flex-3">
+          <div className="flex-3">
             <button
               onClick={() => setIsModalOpen(true)}
               className="bg-red-500 text-white p-2 rounded-md w-full"
