@@ -17,7 +17,9 @@ function SongList({
             key={song.id}
             className="bg-white shadow-lg rounded-lg p-4 border border-gray-200 relative transform transition duration-500 hover:scale-105"
           >
-            <h3 className="text-lg font-semibold">{song.title}</h3>
+            <h3 className="text-blue-500 text-lg font-semibold">
+              {song.title}
+            </h3>
             <p className="text-gray-600">by {song.artist}</p>
             <p className="text-gray-600">Album: {song.album}</p>
             {userRole.role === "admin" && (
