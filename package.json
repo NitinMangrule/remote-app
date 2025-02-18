@@ -4,8 +4,8 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev": "vite",
-    "build": "tsc -b && vite build",
+    "dev": "vite --port 5001 --strictPort",
+    "build": "concurrently \"vite build --watch\" \"vite preview --port 5001 --strictPort\"",
     "lint": "eslint .",
     "preview": "vite preview",
     "test": "jest"
@@ -19,6 +19,7 @@
   },
   "devDependencies": {
     "@eslint/js": "^9.19.0",
+    "concurrently": "^9.1.2",
     "@testing-library/jest-dom": "^6.6.3",
     "@testing-library/react": "^16.2.0",
     "@testing-library/user-event": "^14.6.1",

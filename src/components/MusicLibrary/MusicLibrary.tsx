@@ -10,7 +10,8 @@ interface MusicLibraryProps {
   userRole?: { role: string };
 }
 
-function MusicLibrary({ userRole }: MusicLibraryProps) {
+function MusicLibrary(props: MusicLibraryProps) {
+  const { userRole } = props;
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [songs, setSongs] = useState(SONGS_DATA);
   const [filter, setFilter] = useState("");

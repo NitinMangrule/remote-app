@@ -10,7 +10,6 @@ export default defineConfig({
       name: "remote_app",
       filename: "remoteEntry.js",
       exposes: {
-        // "./MyProvider": "./src/MyContext",
         "./MusicLibrary": "./src/components/MusicLibrary/MusicLibrary.jsx",
       },
       shared: ["react", "react-dom"],
