@@ -1,0 +1,4 @@
+[[headers]]
+for = "/assets/remoteEntry.js"
+[headers.values]
+Access-Control-Allow-Origin = "*"
