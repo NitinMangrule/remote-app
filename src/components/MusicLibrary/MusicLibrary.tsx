@@ -50,7 +50,7 @@ function MusicLibrary(props: MusicLibraryProps) {
 
   return (
     <div className="container mx-auto p-4 mt-2">
-      <h2 className="text-3xl text-blue-500 font-bold mt-2 mb-4">
+      <h2 className="cursor-pointer text-3xl text-blue-500 font-bold mt-2 mb-4">
         Music Library
       </h2>
       <SearchFilterSection

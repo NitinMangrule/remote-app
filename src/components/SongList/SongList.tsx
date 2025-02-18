@@ -10,14 +10,14 @@ function SongList({
   removeSong: (id: number) => void;
 }) {
   return (
-    <div className="min-h-screen grid sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-4 gap-4 mb-10">
+    <div className="cursor-pointer min-h-screen grid sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-4 gap-4 mb-10">
       {songs.length > 0 ? (
         songs?.map((song) => (
           <div
             key={song.id}
-            className="bg-white shadow-lg rounded-lg p-4 border border-gray-200 relative transform transition duration-500 hover:scale-105"
+            className="cursor-pointer bg-white shadow-lg rounded-lg p-4 border border-gray-200 relative transform transition duration-500 hover:scale-105"
           >
-            <h3 className="text-blue-500 text-lg font-semibold">
+            <h3 className="cursor-pointer text-blue-500 text-lg font-semibold">
               {song.title}
             </h3>
             <p className="text-gray-600">by {song.artist}</p>
